@@ -1,5 +1,8 @@
 ﻿using Foundation;
+using Microsoft.Maui;
+using Microsoft.Maui.Hosting;
 using Microsoft.Maui.LifecycleEvents;
+using Mopups.Samples;
 using UIKit;
 
 namespace Mopups.Samples

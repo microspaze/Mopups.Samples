@@ -5,6 +5,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:rg="clr-namespace:Mopups.Pages;assembly=Mopups"
     xmlns:animation="clr-namespace:Mopups.Animations;assembly=Mopups"
+    CloseWhenBackgroundIsClicked="True"
     AndroidTalkbackAccessibilityWorkaround="True">
     <rg:PopupPage.Resources>
         <ResourceDictionary>
@@ -20,7 +21,8 @@
             PositionOut="Bottom"
             />
     </rg:PopupPage.Animation>
-        <AbsoluteLayout HorizontalOptions="Center" VerticalOptions="Center">
+    <ScrollView HorizontalOptions="Center" VerticalOptions="Center">
+        <AbsoluteLayout HorizontalOptions="Center">
             <Frame
                 x:Name="FrameContainer"
                 Margin="15"
@@ -72,4 +74,5 @@
                 </Image>
             </ContentView>
         </AbsoluteLayout>
+    </ScrollView>
 </rg:PopupPage>
